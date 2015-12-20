@@ -35,8 +35,8 @@ public class WhenMovingPlayers {
 		List<Die> dice = new ArrayList<Die>();
 		int dieValue1 = 3;
 		int dieValue2 = 4;
-		dice.add(new LoadedDie(6,dieValue1));
-		dice.add(new LoadedDie(6,dieValue2));
+		dice.add(new LoadedDie(dieValue1));
+		dice.add(new LoadedDie(dieValue2));
 
 		player.takeTurn(dice);
 		
@@ -51,16 +51,13 @@ public class WhenMovingPlayers {
 		Board board = new Board();
 		
 		List<Square> squares = board.getSquares();
-		for (Square square : squares) {
-		}
-
 		Player player = new Player(squares.get(38), Token.BattleShip);
 
 		List<Die> dice = new ArrayList<Die>();
 		int dieValue1 = 3;
 		int dieValue2 = 4;
-		dice.add(new LoadedDie(6,dieValue1));
-		dice.add(new LoadedDie(6,dieValue2));
+		dice.add(new LoadedDie(dieValue1));
+		dice.add(new LoadedDie(dieValue2));
 
 		player.takeTurn(dice);
 	

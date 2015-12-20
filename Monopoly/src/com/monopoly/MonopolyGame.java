@@ -11,7 +11,6 @@ public class MonopolyGame {
 	public static final int MIN_NUM_PLAYERS = 2;
 	private Board board;
 	private List<Player> playerList;
-	private Token token;
 	private List<Die> dice;
 
 	public MonopolyGame() {
@@ -23,7 +22,6 @@ public class MonopolyGame {
 		dice.add(new Die());
 		board = new Board();
 		playerList = new ArrayList<Player>();
-		token = Token.BattleShip;
 	}
 
 	public void start() {

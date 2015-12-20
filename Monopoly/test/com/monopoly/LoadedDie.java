@@ -6,15 +6,11 @@ public class LoadedDie extends Die{
 	int loadedValue;
 	
 	public LoadedDie(int value) {
+		super(6);
 		loadedValue = value;
 	}
 	
-	public LoadedDie(int maxSides, int value) {
 
-		this.max = maxSides;
-		loadedValue = value;		
-	}
-	
 	@Override
 	public int roll() {
 
